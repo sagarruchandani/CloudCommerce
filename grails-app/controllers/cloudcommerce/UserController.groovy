@@ -165,6 +165,8 @@ class UserController {
 		println Shared_db.getAll(u.Completedorder)
 		println u.Address
 		
+		
+		
 		//
 		[previouscart:Shared_db.getAll(u.Completedorder),address:u.Address]
 		//redirect(controller: "user", action: "MyAccount")

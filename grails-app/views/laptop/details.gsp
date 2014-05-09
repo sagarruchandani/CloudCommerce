@@ -83,8 +83,9 @@ border:1px solid black;
  
  	</g:each>
 </table>
+
 <table border="1">
-	<g:each in="${custom}" var="item"> 
+	<g:each in="${mongo}" var="item"> 
 <tr><th>RAM: </th><td>${item.RAM}</tr>
 <tr><th>Processor: </th><td>${item.Processor}</tr>
 <tr><th>Hard Disk: </th><td>${item.HDD}</tr>
@@ -93,6 +94,7 @@ border:1px solid black;
 <tr><th>Operating System: </th><td>${item.OS}</tr>
  	</g:each>
 </table>
+
 
 </body>
 </html>

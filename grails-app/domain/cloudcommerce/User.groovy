@@ -1,5 +1,6 @@
 package cloudcommerce
 
+
 class User {
 
 	static mapWith="mongo"
@@ -20,6 +21,11 @@ class User {
 	Map Address
 	Integer counter=0
 	
+	static mapping={
+		collection "user"
+		database "test"
+	   
+	   }
 	
 	static transients = {confirm}
 	

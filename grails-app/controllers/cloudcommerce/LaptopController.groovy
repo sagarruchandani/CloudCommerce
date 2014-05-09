@@ -6,9 +6,7 @@ class LaptopController {
 	}
 	
 	def showAll() {
-		
-			//println Shared_db.list()
-		
+			
 			[laptops:Shared_db.findAllByStore('laptop')]
 	}
 	
@@ -28,7 +26,18 @@ class LaptopController {
 		def idx = params.id;
 		println idx
 		
-		[shared:Shared_db.findAllById(idx), custom:Laptop_db.findAllByProduct_id(idx)]
+		def v = Variant.findAllByProduct_id(idx)
+		println v.variants
+		//println v.HDD
+		//println v.OS
+		
+		//def x=v.variants.keySet() as String[]
+		def y=v.variants.HDD
+		//println k
+		//println x
+		println y
+		
+		[shared:Shared_db.findAllById(idx), custom:Laptop_db.findAllByProduct_id(idx), mongo:v.variants]
 		
 	}
 	

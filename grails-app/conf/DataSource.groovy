@@ -41,17 +41,7 @@ environments {
       }
 		grails {
 			mongo {
-				//url ="mongodb://cmpe281:cmpe281@oceanic.mongohq.com:10061/Nqw0m9GO8Q9iLACOBgZw"
-				//host = "localhost"
-				//port = 27017
-				//databaseName = "team12"
-				//host = 'oceanic.mongohq.com'
-				//port = 10041
-				//username = 'cmpe281'
-				//password = 'cmpe281'
-				//databaseName = 'team12'
-				//MONGOHQ_URL="mongodb://cloudbees:CbWYA5vCpwrxxhmiLLsTlGLTIux1rCHW_PUZsRTCNITfUVJuW9Tnf_phEpWt5Zg5PvAZt9HCuwITqHWLLCi7Hw@oceanic.mongohq.com:10061/Nqw0m9GO8Q9iLACOBgZw"
-				//def url = System.getProperty('MONGOHQ_URL')
+				
 				host = 'oceanic.mongohq.com'
 				port = 10061
 				username = 'cmpe281'
@@ -63,6 +53,7 @@ environments {
 }
 grails {
 	mongo {
+		
 		host = "localhost"
 		port = 27017
 		databaseName = "test"

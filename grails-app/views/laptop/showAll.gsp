@@ -22,7 +22,7 @@
 			<ul class="clearfix">
 				<li class="active"><g:link controller="user" action="index">Home</g:link></li>
 					
-				<li><a href="start.html"><span>Motor Store</span></a></li>
+				<li><g:link controller="Motor" action="cars"><span>Motor Store</span></g:link></li>
 				<li><a href="work.html"><span>Book Store</span></a></li>
 				<li><a href="pricing.html">Cell Phone Store</a></li>
 				<li>

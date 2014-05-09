@@ -48,6 +48,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				    </g:else>
 				</ul>
 			</div>
+			
 			<div class="clear"></div>
  		</div>
 	</div>
@@ -176,5 +177,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		      </div>
 	     </div>
 	</div>
+	
+	<h2>Available Controllers:</h2>
+				<ul>
+					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
+						<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
+					</g:each>
+				</ul>
+	
 </body>
 </html>
